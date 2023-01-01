@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/aws_lambda1/.vs
+/aws_lambda1/bin
+/aws_lambda1/obj
