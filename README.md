@@ -1,4 +1,4 @@
-# AWS Lambda Empty Function Project
+# AWS Lambda Empty Function Project (in C3 .net6)
 
 This starter project consists of:
 * Function.cs - class file containing a class with a single function handler method
@@ -7,6 +7,8 @@ This starter project consists of:
 You may also have a test project depending on the options selected.
 
 The generated function handler is a simple method accepting a string argument that returns the uppercase equivalent of the input string. Replace the body of this method, and parameters, to suit your needs. 
+
+## Install AWS toolkit and setup profile
 
 Install AWS Toolkit for VS 2022 https://aws.amazon.com/visualstudio/
 
@@ -52,3 +54,13 @@ Deploy function to AWS Lambda
     dotnet lambda deploy-function
 ```
 AWS uses .net6 runtime for this project
+
+When publish create a user with AWSLambdaBasicExecutionRole which has CloudWatch Log writing permissions
+
+# aws-lambda-tools-defaults.json 
+    This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI
+
+     "function-handler"     : "aws_lambda1::aws_lambda1.Function::FunctionHandler",
+     "function-name"        : "Friendly_function_name" (Optional friendly name for the lambda)
+
+launchSettings.json : This file contains the profile for Mock Lambda Test Tool. This helps to test locally
