@@ -8,6 +8,10 @@ You may also have a test project depending on the options selected.
 
 The generated function handler is a simple method accepting a string argument that returns the uppercase equivalent of the input string. Replace the body of this method, and parameters, to suit your needs. 
 
+Install AWS Toolkit for VS 2022 https://aws.amazon.com/visualstudio/
+
+Open AWS Explorer and create a default AWS profile
+
 ## Here are some steps to follow from Visual Studio:
 
 To deploy your function to AWS Lambda, right click the project in Solution Explorer and select *Publish to AWS Lambda*.
